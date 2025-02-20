@@ -1,0 +1,1 @@
+This error occurs when using the `useCallback` hook in React Native with a function that uses an object as an argument.  The object passed to the function might be a new object on every render, even if the contents of the object haven't changed. This leads `useCallback` to return a new function on every render, defeating its purpose of memoizing the function.
